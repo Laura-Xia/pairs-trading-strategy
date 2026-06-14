@@ -1,0 +1,58 @@
+{
+    "formation_window": 504,
+    "validation_folds": 3,
+    "validation_fold_days": 63,
+    "retrain_frequency": 63,
+    "max_candidates": 800,
+    "minimum_correlation": 0.5,
+    "same_sector_only": true,
+    "maximum_cointegration_pvalue": 0.1,
+    "maximum_adf_pvalue": 0.1,
+    "minimum_half_life": 3,
+    "maximum_half_life": 80,
+    "signal_configs": [
+        {
+            "name": "fast_125",
+            "z_window": 40,
+            "entry_z": 1.25,
+            "exit_z": 0.2,
+            "stop_z": 3.5,
+            "max_hold": 30
+        },
+        {
+            "name": "medium_150",
+            "z_window": 60,
+            "entry_z": 1.5,
+            "exit_z": 0.25,
+            "stop_z": 3.75,
+            "max_hold": 40
+        },
+        {
+            "name": "baseline_175",
+            "z_window": 60,
+            "entry_z": 1.75,
+            "exit_z": 0.25,
+            "stop_z": 3.75,
+            "max_hold": 40
+        },
+        {
+            "name": "slow_200",
+            "z_window": 90,
+            "entry_z": 2.0,
+            "exit_z": 0.3,
+            "stop_z": 4.0,
+            "max_hold": 50
+        }
+    ],
+    "transaction_cost": 5e-05,
+    "maximum_pairs": 20,
+    "minimum_pairs_required": 5,
+    "maximum_pairs_per_sector": 3,
+    "equal_weight_blend": 0.4,
+    "inverse_volatility_blend": 0.4,
+    "quality_weight_blend": 0.2,
+    "throttle_vol_window": 20,
+    "throttle_history_window": 252,
+    "throttle_quantile": 0.9,
+    "throttle_minimum_exposure": 0.5
+}
